@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    rgb(180, 180, 180),
+    white,
+    white,
+    white,
+    rgb(182, 180, 180)
+  );
+}
+
+textarea {
+  resize: none;
+}
+
+.slideshow-container,
+.thumbnail > img,
+.input-element {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 40px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.slideshow-container {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin-top: 1000px;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#photo {
+  object-fit: contain;
+  max-height: 500px;
+  max-width: 890px;
+  flex-grow: 1;
+}
+
+.gray-container {
+  position: absolute;
+  margin: 0px;
+  padding: 0px 20px;
+  color: #f2f2f2;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  width: 100%;
+  /* left: 55px;
+  right: 55px; */
+  border-radius: 0 0 10px 10px;
+}
+
+.arrow {
+  padding: 20px;
+  flex-grow: auto;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#right-arrow {
+  transform: scaleX(-1);
+}
+
+#photo-title {
+  margin: 5px;
+}
+
+#photo-description {
+  margin: 10px;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+#thumbnails {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  align-items: center;
+  height: 100px;
+  width: 1000px;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+.input {
+  flex-direction: column;
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+  width: 500px;
+}
+
+.input-element {
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  object-fit: contain;
+  padding: 5px;
+  border: 2px solid rgb(180, 180);
+
+}
+
+label {
+ text-align: left;
+} 
+
+.thumbnail > img {
+  opacity: 0.5;
+  background-color: rgb(255, 255, 255);
+  object-fit: contain;
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.thumbnail > img:hover {
+  cursor: pointer;
+  opacity: 1;
+  /* transition: 0.5s; */
+}
+
+.thumbnail {
+  margin: 10px;
+  width: 100px;
+  height: 80px;
+  /* position: relative; */
+}
+
+.title {
+  display: none;
+  position: relative;
+  background: grey;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  top: -140px;
+}
+
+.thumbnail:hover .title {
+  display: block;
+}
+
+#mainpix {
+  opacity: 1;
+  border: 2px solid rgb(180, 180, 180);
+}
