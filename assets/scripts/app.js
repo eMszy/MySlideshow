@@ -75,10 +75,6 @@ const renderThumbnails = (photosUrl, photosTitle, Id) => {
 
   const newPix = document.createElement("img");
   newPix.classList = "thumbnail";
-  const lazyAttribute = document.createAttribute("loding");
-  lazyAttribute.value = "lazy";
-  newPix.setAttributeNode(lazyAttribute);
-
   if (Id === currentPhotoID) newPix.id = "mainpix";
   newPix.src = photosUrl;
 
