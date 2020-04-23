@@ -44,6 +44,12 @@ const photoAlbum = [
     title: "Title",
     description: "What happened here, why is this a very nice image",
   },
+  {
+    id: 6,
+    url: "pix/petrapakophotography_szabotesok-7944.jpg",
+    title: "Family",
+    description: "Összegyült a kis család",
+  },
 ];
 let currentPhotoID = 0;
 
